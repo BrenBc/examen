@@ -1,0 +1,29 @@
+<div class="col-md-7">
+    <h5>Usuarios</h5>
+    <hr>
+    <div class="card card-body">
+        <a class="btn btn-primary  btn-sm btn-block" href="">Datos usuario</a>
+        <table class="table table-sm">
+            <tr>
+            
+                <th>Nombre </th>
+                <th>Apellido</th>
+                <th>Precio</th>
+                <th>Proveedor</th>
+                
+
+            </tr>
+            
+            {% for i in productos %}	
+                <tr>
+                    
+                    <td>{{i.nombre}}</td>
+                    <td>{{i.categoria}}</td>
+                    <td>{{i.precio}}</td>
+                    <td>{{i.proveedor}}</td>
+                </tr>
+            {% endfor %}
+    
+        </table>
+    </div>
+</div>
